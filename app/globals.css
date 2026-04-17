@@ -45,6 +45,16 @@ body {
   50%      { transform: translateY(-18px); }
 }
 
+@keyframes loop-left {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes loop-right {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
