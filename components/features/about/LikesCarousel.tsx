@@ -5,10 +5,10 @@ import LikesModal, { type Item } from "./LikesModal";
 const ITEMS: Item[] = [
   {
     id: 0,
-    src: "/kinkaku.jpg",
-    title: "金閣寺",
-    description: "外人が多い。とりあえずインパクトある",
-    images: ["/kinkaku.jpg", "/kinkaku2.jpg"],
+    src: "/kenninji.jpg",
+    title: "建仁寺",
+    description: "マジで人少ない穴場、天井に竜がいる、風神雷神もかっこいい。",
+    images: ["/kenninji.jpg”"],
   },
   {
     id: 1,
@@ -33,10 +33,10 @@ const ITEMS: Item[] = [
   },
   {
     id: 4,
-    src: "/yogenin.jpg",
+    src: "/yogenin.png",
     title: "養源院",
     description: "血天井、俵屋宗達の作品が見れる。ここは人少ないし解説してくれるからすごい。",
-    images: ["/yogenin.jpg"],
+    images: ["/yogenin.png"],
   },
   {
     id: 5,
@@ -47,10 +47,10 @@ const ITEMS: Item[] = [
   },
   {
     id: 6,
-    src: "/tusonji.jpeg",
+    src: "/tyusonji.jpeg",
     title: "中尊寺金色堂",
     description: "金閣よりエグい、金ピカの建築。中も金ピカで圧倒される。",
-    images: ["/tusonji.jpeg"],
+    images: ["/tyusonji.jpeg"],
   },
 ];
 
@@ -79,46 +79,43 @@ export default function LikesCarousel() {
         </button>
 
         {/* カード3枚 */}
-        <div className="flex flex-1 items-center justify-center gap-4 overflow-hidden">
+        <div className="flex flex-1 items-center justify-center gap-6 overflow-hidden">
           {/* 左カード */}
           <div
-            className="transition-all duration-300 cursor-pointer shrink-0 opacity-60"
-            style={{ transform: "scale(0.78)" }}
+            className="transition-all duration-300 cursor-pointer shrink-0 opacity-50"
             onClick={() => setCurrent(leftIdx)}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={ITEMS[leftIdx].src}
               alt=""
-              className="h-[70vh] w-auto object-cover rounded-xl shadow"
+              className="h-[55vh] aspect-[3/4] object-cover rounded-xl shadow"
             />
           </div>
 
           {/* 中央カード */}
           <div
             className="transition-all duration-300 cursor-pointer shrink-0"
-            style={{ transform: "scale(1)" }}
             onClick={() => setSelected(current)}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={ITEMS[current].src}
               alt=""
-              className="h-[70vh] w-auto object-cover rounded-xl shadow-xl"
+              className="h-[70vh] aspect-[3/4] object-cover rounded-xl shadow-xl"
             />
           </div>
 
           {/* 右カード */}
           <div
-            className="transition-all duration-300 cursor-pointer shrink-0 opacity-60"
-            style={{ transform: "scale(0.78)" }}
+            className="transition-all duration-300 cursor-pointer shrink-0 opacity-50"
             onClick={() => setCurrent(rightIdx)}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={ITEMS[rightIdx].src}
               alt=""
-              className="h-[70vh] w-auto object-cover rounded-xl shadow"
+              className="h-[55vh] aspect-[3/4] object-cover rounded-xl shadow"
             />
           </div>
         </div>
