@@ -2,14 +2,57 @@
 
 import { useState } from "react";
 import LikesModal, { type Item } from "./LikesModal";
-
-const ITEMS: Item[] = Array.from({ length: 7 }, (_, i) => ({
-  id: i,
-  src: "/kinkaku.jpg",
-  title: `好きなもの ${i + 1}`,
-  description: "ここに説明文が入ります。好きな理由や思い出など、自由に書いてください。",
-  images: ["/kinkaku.jpg", "/kinkaku.jpg"],
-}));
+const ITEMS: Item[] = [
+  {
+    id: 0,
+    src: "/kinkaku.jpg",
+    title: "金閣寺",
+    description: "外人が多い。とりあえずインパクトある",
+    images: ["/kinkaku.jpg", "/kinkaku2.jpg"],
+  },
+  {
+    id: 1,
+    src: "/33gendo.jpg",
+    title: "三十三間堂",
+    description: "全員顔違う！圧巻の千手観音像。",
+    images: ["/33gendo.jpg", "/33gendo2.jpg"],
+  },
+  {
+    id: 2,
+    src: "/ginkaku.jpg",
+    title: "銀閣寺",
+    description: "美しい建築と庭園で心を落ち着ける場所です。",
+    images: ["/ginkaku.jpg", "/ginkaku2.jpg"],
+  },
+  {
+    id: 3,
+    src: "/kinkaku.jpg",
+    title: "金閣寺",
+    description: "外人が多い。とりあえずインパクトある。",
+    images: ["/kinkaku.jpg", "/kinkaku2.jpg"],
+  },
+  {
+    id: 4,
+    src: "/yogenin.jpg",
+    title: "養源院",
+    description: "血天井、俵屋宗達の作品が見れる。ここは人少ないし解説してくれるからすごい。",
+    images: ["/yogenin.jpg"],
+  },
+  {
+    id: 5,
+    src: "/kinkaku.jpg",
+    title: "映画",
+    description: "休日は映画鑑賞。特にSFとかサスペンスが好き。",
+    images: ["/kinkaku.jpg"],
+  },
+  {
+    id: 6,
+    src: "/kinkaku.jpg",
+    title: "映画",
+    description: "休日は映画鑑賞。特にSFとかサスペンスが好き。",
+    images: ["/kinkaku.jpg"],
+  },
+];
 
 const N = ITEMS.length;
 
