@@ -1,3 +1,5 @@
+import LikesCarousel from "@/components/features/about/LikesCarousel";
+
 export default function LikesPage() {
   return (
     <main className="flex flex-col h-[calc(100vh-5rem)]">
@@ -14,9 +16,9 @@ export default function LikesPage() {
         </div>
       </div>
 
-      {/* コンテンツエリア */}
-      <div className="flex-1 flex items-center justify-center">
-        <p className="font-default text-2xl">準備中</p>
+      {/* カルーセル */}
+      <div className="flex-1 flex items-center justify-center overflow-hidden">
+        <LikesCarousel />
       </div>
 
       {/* 下部：右→左（画面の一番下） */}
