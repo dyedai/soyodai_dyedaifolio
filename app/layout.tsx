@@ -1,6 +1,7 @@
 // app/layout.tsx
 import "./globals.css";
 import localFont from "next/font/local";
+import Header from "@/components/layout/Header";
 
 const bonji = localFont({
   src: "./fonts/CKbonji.woff2",
@@ -9,13 +10,13 @@ const bonji = localFont({
 });
 
 const sikakuji = localFont({
-  src: "./fonts/HOT-Kakukuzusishukk-B.woff2",
+  src: "./fonts/HOT-Kakukuzusishukk-B.otf",
   variable: "--font-sikakuji",
   display: "swap",
 });
 
 const tappitu = localFont({
-  src: "./fonts/HOT-Soshokk-R.woff2",
+  src: "./fonts/HOT-Soshokk-R.otf",
   variable: "--font-tappitu",
   display: "swap",
 });
@@ -43,6 +44,7 @@ export default function RootLayout({
       `}
     >
       <body className="font-default">
+        <Header />
         {children}
       </body>
     </html>
