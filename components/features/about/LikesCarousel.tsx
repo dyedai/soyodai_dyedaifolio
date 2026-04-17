@@ -40,17 +40,17 @@ const ITEMS: Item[] = [
   },
   {
     id: 5,
-    src: "/kinkaku.jpg",
-    title: "映画",
-    description: "休日は映画鑑賞。特にSFとかサスペンスが好き。",
-    images: ["/kinkaku.jpg"],
+    src: "/dazaihu.jpg",
+    title: "大宰府天満宮",
+    description: "元カノといった。でも建築ガチかっこいい。",
+    images: ["/dazaihu.jpg"],
   },
   {
     id: 6,
-    src: "/kinkaku.jpg",
-    title: "映画",
-    description: "休日は映画鑑賞。特にSFとかサスペンスが好き。",
-    images: ["/kinkaku.jpg"],
+    src: "/tusonji.jpeg",
+    title: "中尊寺金色堂",
+    description: "金閣よりエグい、金ピカの建築。中も金ピカで圧倒される。",
+    images: ["/tusonji.jpeg"],
   },
 ];
 
