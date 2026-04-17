@@ -30,6 +30,21 @@ body {
   color: var(--foreground);
 }
 
+@keyframes slide-from-left {
+  from { transform: translateX(-110%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes slide-from-right {
+  from { transform: translateX(110%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes float-cloud {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-18px); }
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

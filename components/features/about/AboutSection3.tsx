@@ -1,10 +1,12 @@
 import SectionTitle from "./SectionTitle";
+import VerticalColumns from "./VerticalColumns";
+import type { Column } from "@/lib/about";
 
-const COLUMNS: string[] = [
+const COLUMNS: Column[] = [
   "幼き日の工作",
   "あの無垢な熱量を",
   "デジタルの領域へ",
-  "陣内侘助のごとき",
+  { text: "陣内侘助のごとき", image: "/wabisuke.png" },
   "独走にして圧倒的な技術",
   "多彩な技術を操り",
   "誰も見たことのない",
@@ -14,19 +16,7 @@ const COLUMNS: string[] = [
 export default function AboutSection3() {
   return (
     <section className="min-h-screen flex items-center justify-center gap-12 lg:gap-50 px-8">
-      {/* 8列縦書き本文（左）・flex-row-reverseで左から右に読む */}
-      <div className="flex flex-row-reverse gap-6 font-default leading-[50px] text-2xl tracking-[0.4em]">
-        {COLUMNS.map((col, i) => (
-          <p
-            key={i}
-            className="[writing-mode:vertical-rl] [text-orientation:upright]"
-          >
-            {col}
-          </p>
-        ))}
-      </div>
-
-      {/* タイトル（右）・縦長表示 */}
+      <VerticalColumns columns={COLUMNS} className="leading-[50px] text-2xl tracking-[0.4em]" />
       <SectionTitle
         title={"なぜ\nエンジニア\nを目指したのか"}
         bgImage="/titlebg3.svg"

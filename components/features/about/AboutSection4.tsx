@@ -1,6 +1,8 @@
 import SectionTitle from "./SectionTitle";
+import VerticalColumns from "./VerticalColumns";
+import type { Column } from "@/lib/about";
 
-const COLUMNS: string[] = [
+const COLUMNS: Column[] = [
   "二〇〇三年　誕生",
   "二〇二一　芝浦工業大学",
   "二〇二五年　高嶋研究室",
@@ -10,20 +12,8 @@ const COLUMNS: string[] = [
 export default function AboutSection4() {
   return (
     <section className="min-h-screen flex items-center justify-center gap-12 lg:gap-50 px-8">
-      {/* タイトル（左） */}
       <SectionTitle title="経歴" bgImage="/titlebg4.svg" />
-
-      {/* 縦書き本文（右）・flex-row-reverseで左から右に読む */}
-      <div className="flex flex-row-reverse gap-6 font-default leading-[92px] text-2xl tracking-[0.4em]">
-        {COLUMNS.map((col, i) => (
-          <p
-            key={i}
-            className="[writing-mode:vertical-rl] [text-orientation:upright]"
-          >
-            {col}
-          </p>
-        ))}
-      </div>
+      <VerticalColumns columns={COLUMNS} className="leading-[92px] text-2xl tracking-[0.4em]" />
     </section>
   );
 }
