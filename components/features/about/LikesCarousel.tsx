@@ -8,14 +8,14 @@ const ITEMS: Item[] = [
     src: "/kenninji.jpg",
     title: "建仁寺",
     description: "マジで人少ない穴場、天井に竜がいる、風神雷神もかっこいい。",
-    images: ["/kenninji.jpg”"],
+    images: ["/kenninji2.jpg"],
   },
   {
     id: 1,
     src: "/33gendo.jpg",
     title: "三十三間堂",
     description: "全員顔違う！圧巻の千手観音像。",
-    images: ["/33gendo.jpg", "/33gendo2.jpg"],
+    images: ["/33gendo.jpg", "/33gendo2.png"],
   },
   {
     id: 2,
@@ -36,21 +36,21 @@ const ITEMS: Item[] = [
     src: "/yogenin.png",
     title: "養源院",
     description: "血天井、俵屋宗達の作品が見れる。ここは人少ないし解説してくれるからすごい。",
-    images: ["/yogenin.png"],
+    images: ["/yogenin.png", "/yogenin2.jpg"],
   },
   {
     id: 5,
     src: "/dazaihu.jpg",
     title: "大宰府天満宮",
     description: "元カノといった。でも建築ガチかっこいい。",
-    images: ["/dazaihu.jpg"],
+    images: ["/dazaihu.jpg", "/dazaihu.webp"],
   },
   {
     id: 6,
     src: "/tyusonji.jpeg",
     title: "中尊寺金色堂",
     description: "金閣よりエグい、金ピカの建築。中も金ピカで圧倒される。",
-    images: ["/tyusonji.jpeg"],
+    images: ["/tyusonji2.jpg", "/tyusonji3.jpg"],
   },
 ];
 
