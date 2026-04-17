@@ -1,5 +1,6 @@
 import SectionTitle from "./SectionTitle";
 import VerticalColumns from "./VerticalColumns";
+import FloatingCloud from "@/components/ui/FloatingCloud";
 import type { Column } from "@/lib/about";
 
 const COLUMNS: Column[] = [
@@ -15,7 +16,9 @@ const COLUMNS: Column[] = [
 
 export default function AboutSection3() {
   return (
-    <section className="min-h-screen flex items-center justify-center gap-12 lg:gap-50 px-8">
+    <section className="relative overflow-hidden min-h-screen flex items-center justify-center gap-12 lg:gap-50 px-8">
+      <FloatingCloud src="/kumo7.svg" direction="left"  width={540} height={150} className="bottom-0 left-0" />
+      <FloatingCloud src="/kumo8.svg" direction="right" width={540} height={150} className="bottom-0 right-0" />
       <VerticalColumns columns={COLUMNS} className="leading-[50px] text-2xl tracking-[0.4em]" />
       <SectionTitle
         title={"なぜ\nエンジニア\nを目指したのか"}
