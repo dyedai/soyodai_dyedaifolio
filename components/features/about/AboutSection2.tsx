@@ -9,7 +9,7 @@ const COLUMNS: Column[] = [
   "血液型　O型",
   "十六性格　討論者",
   "一言　負けず嫌い",
-  { text: "好きなものは→", href: "/about/likes" },
+  "好きなもの　服",
 ];
 
 export default function AboutSection2() {
