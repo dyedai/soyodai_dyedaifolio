@@ -5,7 +5,7 @@ import type { Column } from "@/lib/about";
 
 const COLUMNS: Column[] = [
   "二〇〇三年　誕生",
-  "二〇二一　芝浦工業大学",
+  "二〇二一年　芝浦工業大学",
   "二〇二五年　高嶋研究室",
   "二〇二六年 株式会社ファブリカ",
 ];
